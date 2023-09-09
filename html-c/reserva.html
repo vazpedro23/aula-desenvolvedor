@@ -1,0 +1,56 @@
+<selection>
+    <h2>Orçamento</h2>
+    <form method= "GET" action=" ">
+        <fieldset>
+            <legend>Informações da viagem</legend>
+            <label>Nome</label><br>
+            <input type="text" name="nome"><br><br>
+            
+            <label>E-mail</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label>Data de ida</label><br>
+            <input type="date" name="dataIda"><br><br>
+
+            <label>Data de volta</label><br>
+            <input type="date" name="dataVolta"><br><br>
+
+            <label>Quantidade de pessoas</label><br>
+            <input type="number" name="nPessoas"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Serviços</legend>
+            <label><br><input type= "checkbox" name= "passagens" value= "passagens">Compra de passagens</label>
+            <label><br><input type= "checkbox" name= "hospedagem" value= "hospedagem">Reserva de hospedagem</label>
+            <label><br><input type= "checkbox" name= "veiculo" value= "veiculo">Aluguel de veículos</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Forma de pagamento</legend>
+            <label>
+                <br><input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito
+            </label>
+            <label>
+                <br><input type="radio" name="formaPagamento" value="Boleto">Boleto bancário
+            </label>
+            <label>
+                <br><input type="radio" name="formaPagamento" value="Pix">Pix
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Prazo de pagamento</legend>
+            <select name="prazoPagamento">
+                <option value="aVista" selected>À vista</option>
+                <option value="5x">5X sem juros</option>
+                <option value="10x">10x com juros</option>
+            </select>
+        </fieldset>
+
+        <br><label>Comentário</label><br>
+        <textarea rows="5" name="comentario"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</selection>
